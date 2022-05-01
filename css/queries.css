@@ -1,0 +1,128 @@
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 56.25%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  section,
+  footer {
+    padding: 7.5rem 5rem;
+  }
+  header {
+    padding: 2.2rem 5rem;
+  }
+  section.hero {
+    grid-template-columns: 1fr;
+    background: linear-gradient(
+      45deg,
+      rgb(var(--grad-color-1)),
+      rgb(var(--grad-color-2))
+    );
+  }
+  #header-shape {
+    display: none;
+  }
+  .hero-img {
+    grid-row: 1;
+  }
+  nav ul a,
+  nav a#logo {
+    color: var(--white-shade-1);
+  }
+  .hero-content h1,
+  .hero-content p {
+    text-align: center;
+  }
+  .hero-content h1 {
+    color: var(--white-shade-1);
+  }
+  .hero-content p {
+    color: var(--white-shade-2);
+  }
+  .hero-content .primary-btn ,.primary-hehe {
+    background-color: var(--white-shade-1);
+    color: var(--base-shade-1);
+  }
+  .hero-content .secondary-btn ,.secondary-hehe {
+    color: var(--white-shade-1);
+    border-color: var(--white-shade-1);
+  }
+  .btn-container {
+    justify-content: center;
+  }
+  .download-app img {
+    width: 30%;
+  }
+  .app-feature div {
+    justify-content: center;
+  }
+  .app-feature p {
+    text-align: center;
+  }
+  .download-app a img {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    padding: 2rem 4rem;
+  }
+  #ham-menu {
+    display: block;
+    color: var(--white-shade-1);
+  }
+  nav a#logo,
+  #ham-menu {
+    font-size: var(--heading-font-size-2);
+  }
+  nav ul {
+    background-color: var(--black-shade-1);
+    position: fixed;
+    left: -100vw;
+    top: 70.4px;
+    height: calc(100vh - 70.4px);
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;
+  }
+  nav ul a {
+    font-size: var(--heading-font-size-3);
+  }
+  .sticky nav ul a {
+    color: var(--white-shade-1);
+  }
+  nav ul a:hover {
+    color: var(--base-shade-1);
+  }
+  #scroll-top {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 46.87%;
+  }
+  header {
+    padding: 2rem 3rem;
+  }
+  section,
+  footer {
+    padding: 7.5rem 3rem;
+  }
+  .features .column {
+    padding: 4rem 2rem;
+  }
+  nav ul {
+    top: 65.18px;
+    height: calc(100vh - 65.18px);
+  }
+}

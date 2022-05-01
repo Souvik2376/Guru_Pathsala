@@ -1,0 +1,406 @@
+/*------ Variables ------*/
+:root {
+  --base-shade-1: #00a8fa;
+  --white-shade-1: #ffffff;
+  --white-shade-2: #d7e1f3;
+  --black-shade-1: #232323;
+  --black-shade-2: #676a8b;
+  --grad-color-1: 0, 180, 250;
+  --grad-color-2: 21, 120, 255;
+
+  --base-font-size: 1.6rem;
+
+  --heading-font-size-1: 4rem;
+  --heading-font-size-2: 3.2rem;
+  --heading-font-size-3: 2rem;
+  --heading-font-size-4: 1.8rem;
+
+  --border-radius-1: 1rem;
+  --border-radius-2: 0.5rem;
+}
+/*------ Base Styles ------*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+/*------ Utility Classes ------*/
+
+section,
+footer {
+  padding: 9rem 5rem;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.column {
+  width: 100%;
+}
+.section-desc {
+  text-align: center;
+  margin: 2rem 0 6rem 0;
+}
+h1 {
+  font-size: var(--heading-font-size-1);
+  color: var(--black-shade-1);
+  margin-bottom: 2rem;
+  word-spacing: 1rem;
+  line-height: 1.6;
+}
+h2 {
+  font-size: var(--heading-font-size-2);
+  color: var(--black-shade-1);
+  font-weight: 700;
+  text-align: center;
+}
+h3 {
+  font-size: var(--heading-font-size-3);
+  color: var(--black-shade-1);
+  font-weight: 700;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+h4 {
+  font-size: var(--heading-font-size-4);
+  color: var(--black-shade-2);
+  margin: 1.5rem 0;
+}
+p,
+button {
+  font-size: var(--base-font-size);
+  color: var(--black-shade-2);
+  line-height: 1.8;
+  font-weight: 400;
+}
+.btn {
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius-2);
+  border: none;
+  margin: 2rem 0;
+}
+.primary-btn {
+  background-color: var(--base-shade-1);
+  color: var(--white-shade-1);
+}
+.secondary-btn {
+  border: 0.3rem solid var(--base-shade-1);
+  color: var(--base-shade-1);
+}
+
+/*------ Header ------*/
+header {
+  position: fixed;
+  width: 100%;
+  padding: 1.75rem 5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  font-size: var(--heading-font-size-4);
+  text-decoration: none;
+}
+nav a#logo {
+  color: var(--black-shade-1);
+  font-weight: 700;
+  font-size: 30px;
+}
+nav ul a {
+  color: var(--white-shade-1);
+}
+
+.primary-hehe{
+  text-decoration: none;
+  color: var(--white-shade-1);
+}
+
+.secondary-hehe{
+  text-decoration: none;
+  color: var(--base-shade-1);
+}
+
+/*-- SideMenu --*/
+#ham-menu {
+  display: none;
+}
+nav ul.active {
+  left: 0;
+}
+/*-- Sticky Header --*/
+.sticky {
+  background-color: var(--white-shade-1);
+  box-shadow: 0 2rem 1.5rem rgba(0, 0, 0, 0.05);
+}
+.sticky nav ul a,
+.sticky nav a#logo,
+.sticky #ham-menu {
+  color: var(--black-shade-1);
+}
+/*-- Link Hover Effect --*/
+nav ul a:hover {
+  color: var(--black-shade-1);
+}
+.sticky nav ul a:hover {
+  color: var(--base-shade-1);
+}
+/*------ Section: Hero ------*/
+section.hero {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  align-items: center;
+}
+#header-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hero-content p {
+  text-align: justify;
+}
+.hero-img img {
+  display: block;
+  width: 100%;
+}
+.btn-container {
+  display: flex;
+  gap: 3rem;
+}
+/*------ Section: Features ------*/
+.features .row {
+  align-items: stretch;
+}
+.features .column {
+  padding: 6rem 2rem;
+  border-radius: var(--border-radius-1);
+}
+.features .column p {
+  text-align: center;
+}
+.features h3 {
+  margin: 3rem 0;
+}
+.features i {
+  display: block;
+  height: 6rem;
+  width: 6rem;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  background-color: var(--base-shade-1);
+  color: var(--white-shade-1);
+  padding: 1.3rem 0;
+  text-align: center;
+  border-radius: var(--border-radius-2);
+}
+.features .column:hover {
+  background-color: var(--base-shade-1);
+}
+.features .column:hover h3 {
+  color: var(--white-shade-1);
+}
+.features .column:hover p {
+  color: var(--white-shade-2);
+}
+.features .column:hover i {
+  background-color: var(--white-shade-1);
+  color: var(--base-shade-1);
+}
+/*------ Section: Courses ------*/
+.courses .row {
+  align-items: stretch;
+}
+.courses .column {
+  box-shadow: 0 0.5rem 2.4rem 0.6rem rgba(0, 0, 0, 0.06);
+  border-radius: var(--border-radius-1);
+  display: flex;
+  flex-direction: column;
+}
+.courses .column > *:not(img) {
+  padding: 0 2rem;
+}
+.courses .column img {
+  border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
+  width: 100%;
+}
+.courses .column p {
+  text-align: center;
+  flex-grow: 1;
+}
+.courses-btn {
+  display: flex;
+  justify-content: center;
+}
+.courses-btn .btn:hover {
+  color: var(--white-shade-1);
+  background-color: var(--base-shade-1);
+}
+/*------ Section: Testimonials ------*/
+.testimonial {
+  background-image: linear-gradient(
+      45deg,
+      rgba(var(--grad-color-1), 0.8),
+      rgba(var(--grad-color-2), 0.8)
+    ),
+    url(testimonial-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.testimonial h2,
+.testimonial .section-desc {
+  color: var(--white-shade-1);
+}
+.testimonial .row {
+  align-items: stretch;
+}
+.testimonial .column {
+  background-color: var(--white-shade-1);
+  padding: 4rem 3rem;
+  text-align: center;
+  border-radius: var(--border-radius-1);
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-image {
+  height: 14rem;
+  width: 14rem;
+  margin: auto;
+  padding: 0.9rem;
+  background: linear-gradient(
+    var(--white-shade-1) 50%,
+    var(--base-shade-1) 50%
+  );
+  border-radius: 50%;
+}
+.testimonial-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+.testimonial .column p {
+  margin: 4rem 0;
+  flex-grow: 1;
+}
+/*------ Section: Download App ------*/
+.download-app .column:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+.download-app .column:nth-child(2) {
+  padding: 0 2rem;
+}
+.download-app img {
+  display: block;
+  width: 45%;
+}
+.app-feature {
+  border-bottom: 1.5px dashed rgba(var(--grad-color-1), 0.4);
+}
+.app-feature:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.app-feature div {
+  display: flex;
+  gap: 2rem;
+}
+.app-feature p {
+  margin-bottom: 1.5rem;
+}
+.download-app .fas {
+  display: inline-block;
+  background-color: var(--white-shade-2);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--base-shade-1);
+}
+.download-app h3 {
+  display: inline-block;
+}
+.download-btns {
+  display: flex;
+}
+.download-btns a {
+  display: inline;
+  text-align: center;
+}
+.download-btns a img {
+  display: inline-block;
+  width: 70%;
+}
+/*------ Section: Footer ------*/
+footer {
+  background-color: var(--black-shade-1);
+}
+footer h3 {
+  margin: 0;
+}
+footer h3,
+footer h4 {
+  color: var(--white-shade-1);
+  text-align: center;
+}
+footer .row {
+  margin-bottom: 6rem;
+}
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid var(--white-shade-1);
+}
+.social-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.social-links a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--white-shade-1);
+}
+footer p {
+  text-align: center;
+}
+
+/*------ Scroll Top Button ------*/
+#scroll-top {
+  position: fixed;
+  display: none;
+  place-items: center;
+  height: 5rem;
+  width: 5rem;
+  right: 3rem;
+  bottom: 3rem;
+  background-color: var(--base-shade-1);
+  color: var(--white-shade-1);
+  border: none;
+  outline: none;
+  font-size: var(--heading-font-size-3);
+  border-radius: var(--border-radius-2);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+}
