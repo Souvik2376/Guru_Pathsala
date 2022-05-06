@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Teacher Registration Form | Guru Pathsala</title>
+    <link rel="stylesheet" href="teacher_register.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Guru Pathsala</div>
+    <div class="form-name">Teacher Registration Form</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Teaching Method</span>
+              <select name="method" id="method" required>
+                  <option value="" disabled selected hidden>--select teaching method</option>
+                  <option value="">Offline</option>
+                  <option value="">Online</option>
+                  <option value="">Comfortable with both</option>
+              </select>
+            </div>
+            <div class="input-box">
+            <span class="details">Contact Number</span>
+            <input type="text" name="country_code" title="Please enter valid phone number (without country code)" pattern="[1-9]{1}[0-9]{9}" placeholder="Enter your phone number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Date of Birth</span>
+              <input type="date" placeholder="" required>
+            </div>
+          <div class="input-box">
+            <span class="details">Select Class range from</span>
+            <select name="class" id="class" required>
+                <option value="" disabled selected hidden>--your class range starts from--</option>
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+                <option value="5">V</option>
+                <option value="6">VI</option>
+                <option value="7">VII</option>
+                <option value="8">VIII</option>
+                <option value="9">IX</option>
+                <option value="10">X</option>
+                <option value="11">XI</option>
+                <option value="12">XII</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Select Class range to</span>
+            <select name="class" id="class" required>
+                <option value="" disabled selected hidden>--your class range ends to--</option>
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+                <option value="5">V</option>
+                <option value="6">VI</option>
+                <option value="7">VII</option>
+                <option value="8">VIII</option>
+                <option value="9">IX</option>
+                <option value="10">X</option>
+                <option value="11">XI</option>
+                <option value="12">XII</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Highest Qualification</span>
+            <select name="qualificaation" id="qualification" required>
+                <option value="" disabled selected>--select your highest qualification--</option>
+                <option value="">Secondary (Class X)</option>
+                <option value="">Higher Secondary (Class XII)</option>
+                <option value="">UnderGraduate</option>
+                <option value="">PostGraduate</option>
+                <option value="">B.Ed</option>
+                <option value="">M.Ed</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Currently Pursuing</span>
+            <select name="qualificaation" id="qualification" required>
+                <option value="" disabled selected>--select the course you are currently pursuing--</option>
+                <option value="">N/A</option>
+                <option value="">Secondary (Class X)</option>
+                <option value="">Higher Secondary (Class XII)</option>
+                <option value="">UnderGraduate</option>
+                <option value="">PostGraduate</option>
+                <option value="">B.Ed</option>
+                <option value="">M.Ed</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Are you doing any job currently?</span>
+            <select name="" id="" required>
+                <option value="" selected disabled hidden>--select accordingly--</option>
+                <option value="">Yes</option>
+                <option value="">No</option>
+                <option value="">Part Time</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Gender</span>
+            <select name="gender" id="gender" required>
+                <option value="" disabled selected hidden>--select your gender--</option>
+                <option value="">Female</option>
+                <option value="">Male</option>
+                <option value="">Non-binary</option>
+                <option value="">Transgender</option>
+                <option value="">Prefer not to say</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your full address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">State</span>
+            <select name="state" id="state" required>
+                <option value="" disabled selected hidden>--select your state--</option>
+                <option value="">Andhra Pradesh</option>
+                <option value="">Arunachal Pradesh</option>
+                <option value="">Assam</option>
+                <option value="">Bihar</option>
+                <option value="">Chhattisgarh</option>
+                <option value="">Goa</option>
+                <option value="">Gujarat</option>
+                <option value="">Haryana</option>
+                <option value="">Himachal Pradesh</option>
+                <option value="">Jharkhand</option>
+                <option value="">Karnataka</option>
+                <option value="">Kerala</option>
+                <option value="">Madhya Pradesh</option>
+                <option value="">Maharashtra</option>
+                <option value="">Manipur</option>
+                <option value="">Meghalaya</option>
+                <option value="">Mizoram</option>
+                <option value="">Nagaland</option>
+                <option value="">Odisha</option>
+                <option value="">Punjab</option>
+                <option value="">Rajasthan</option>
+                <option value="">Sikkim</option>
+                <option value="">Tamil Nadu</option>
+                <option value="">Telangana</option>
+                <option value="">Tripura</option>
+                <option value="">Uttar Pradesh</option>
+                <option value="">Uttarakhand</option>
+                <option value="">West Bengal</option>
+                <option value="" disabled>--union territories</option>
+                <option value="">Andaman and Nicobar Islands</option>
+                <option value="">Chandigarh</option>
+                <option value="">Dadra & Nagar Haveli and Daman & Diu</option>
+                <option value="">Delhi</option>
+                <option value="">Jammu and Kashmir</option>
+                <option value="">Lakshadweep</option>
+                <option value="">Puducherry</option>
+                <option value="">Ladakh</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" placeholder="Enter your city" required>
+          </div>
+          <div class="input-box">
+            <span class="details">PIN code</span>
+            <input type="text" title="Please enter valid PIN code" pattern="[0-9]{6}" placeholder="Enter your PIN code" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Preferred Board</span>
+            <select name="" id="" required>
+                <option value="" selected disabled hidden>--select your preferred board--</option>
+                <option value="">State Board</option>
+                <option value="">Central Board of Secondary Education (CBSE)</option>
+                <option value="">Indian Certificate of Secondary Education (ICSE)</option>
+                <option value="">Council for the Indian School Certificate Examination (CISCE)</option>
+                <option value="">National Institute of Open Schooling (NIOS)</option>
+                <option value="">International Baccalaureate (IB)</option>
+                <option value="">Cambridge International Examinations (CIE)</option>
+                <option value="">Comfortable with any</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Preferred Language</span>
+            <input type="url" placeholder="Enter your preferred language to teach in" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Select teaching method</span>
+            <select name="" id="" required>
+                <option value="" selected hidden disabled>--select as per--</option>
+                <option value="">Private tuition</option>
+                <option value="">Batch tuition</option>
+                <option value="">Comfortable with both</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Select students per batch</span>
+            <select name="" id="" required>
+                <option value="" selected hidden disabled>--select as per--</option>
+                <option value="">N/A (if selected private tuition)</option>
+                <option value="">2-5</option>
+                <option value="">6-10</option>
+                <option value="">11-15</option>
+                <option value="">15+</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Fees for private tuition</span>
+            <select name="" id="" required>
+                <option value="" selected hidden disabled>--select fees range you'll charge per student per month in private tuition--</option>
+                <option value="">N/A (if selected batch tuition)</option>
+                <option value="">300-500</option>
+                <option value="">500-750</option>
+                <option value="">750-1000</option>
+                <option value="">1000-1250</option>
+                <option value="">1250-1500</option>
+                <option value="">1500-1750</option>
+                <option value="">1750-2000</option>
+                <option value="">2000+</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Fees for batch tuition</span>
+            <select name="" id="" required>
+                <option value="" selected hidden disabled>--select fees range you'll charge per student per month in batch tuition--</option>
+                <option value="">N/A (if selected private tuition)</option>
+                <option value="">200-300</option>
+                <option value="">300-400</option>
+                <option value="">400-500</option>
+                <option value="">500-600</option>
+                <option value="">600-700</option>
+                <option value="">700-800</option>
+                <option value="">800-900</option>
+                <option value="">900-1000</option>
+                <option value="">1000-1200</option>
+                <option value="">1200+</option>
+            </select>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

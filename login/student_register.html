@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form | Guru Pathsala</title>
+    <link rel="stylesheet" href="student_register.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Guru Pathsala</div>
+    <div class="form-name">Student Registration Form</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Parent's Name</span>
+              <input type="text" placeholder="Enter your Parent's name" required>
+            </div>
+            <div class="input-box">
+            <span class="details">Contact Number</span>
+            <input type="text" name="country_code" title="Please enter valid phone number (without country code)" pattern="[1-9]{1}[0-9]{9}" placeholder="Enter your phone number" required>
+            </div>
+          <div class="input-box">
+            <span class="details">Class</span>
+            <select name="class" id="class" required>
+                <option value="" disabled selected hidden>--select your class--</option>
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+                <option value="5">V</option>
+                <option value="6">VI</option>
+                <option value="7">VII</option>
+                <option value="8">VIII</option>
+                <option value="9">IX</option>
+                <option value="10">X</option>
+                <option value="11">XI</option>
+                <option value="12">XII</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Score</span>
+            <input type="number" min="0" max="100" placeholder="Enter your score/% of last year" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input type="date" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Gender</span>
+            <select name="gender" id="gender" required>
+                <option value="" disabled selected hidden>--select your gender--</option>
+                <option value="">Female</option>
+                <option value="">Male</option>
+                <option value="">Non-binary</option>
+                <option value="">Transgender</option>
+                <option value="">Prefer not to say</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your full address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">State</span>
+            <select name="state" id="state" required>
+                <option value="" disabled selected hidden>--select your state--</option>
+                <option value="">Andhra Pradesh</option>
+                <option value="">Arunachal Pradesh</option>
+                <option value="">Assam</option>
+                <option value="">Bihar</option>
+                <option value="">Chhattisgarh</option>
+                <option value="">Goa</option>
+                <option value="">Gujarat</option>
+                <option value="">Haryana</option>
+                <option value="">Himachal Pradesh</option>
+                <option value="">Jharkhand</option>
+                <option value="">Karnataka</option>
+                <option value="">Kerala</option>
+                <option value="">Madhya Pradesh</option>
+                <option value="">Maharashtra</option>
+                <option value="">Manipur</option>
+                <option value="">Meghalaya</option>
+                <option value="">Mizoram</option>
+                <option value="">Nagaland</option>
+                <option value="">Odisha</option>
+                <option value="">Punjab</option>
+                <option value="">Rajasthan</option>
+                <option value="">Sikkim</option>
+                <option value="">Tamil Nadu</option>
+                <option value="">Telangana</option>
+                <option value="">Tripura</option>
+                <option value="">Uttar Pradesh</option>
+                <option value="">Uttarakhand</option>
+                <option value="">West Bengal</option>
+                <option value="" disabled>--union territories</option>
+                <option value="">Andaman and Nicobar Islands</option>
+                <option value="">Chandigarh</option>
+                <option value="">Dadra & Nagar Haveli and Daman & Diu</option>
+                <option value="">Delhi</option>
+                <option value="">Jammu and Kashmir</option>
+                <option value="">Lakshadweep</option>
+                <option value="">Puducherry</option>
+                <option value="">Ladakh</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" placeholder="Enter your city" required>
+          </div>
+          <div class="input-box">
+            <span class="details">PIN code</span>
+            <input type="text" title="Please enter valid PIN code" pattern="[0-9]{6}" placeholder="Enter your PIN code" required>
+          </div>
+          <div class="input-box">
+            <span class="details">School Name</span>
+            <input type="text" placeholder="Enter your school name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">School Board</span>
+            <select name="" id="" required>
+                <option value="" selected disabled hidden>--select your school board--</option>
+                <option value="">State Board</option>
+                <option value="">Central Board of Secondary Education (CBSE)</option>
+                <option value="">Indian Certificate of Secondary Education (ICSE)</option>
+                <option value="">Council for the Indian School Certificate Examination (CISCE)</option>
+                <option value="">National Institute of Open Schooling (NIOS)</option>
+                <option value="">International Baccalaureate (IB)</option>
+                <option value="">Cambridge International Examinations (CIE)</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">School Website</span>
+            <input type="url" placeholder="Enter your school website (if any)">
+          </div>
+          <div class="input-box">
+            <span class="details">School Address</span>
+            <input type="text" placeholder="Enter your school address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">School Contact</span>
+            <input type="text" name="school_number" title="Please enter valid contact number" pattern="[1-9]{1}[0-9]{9}" placeholder="Enter your school contact (if any)">
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        <div class="link-text">Interested in teaching?</div>
+        <a href="teacher_register.html" class="link-text"> Register as a tutor</a>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
